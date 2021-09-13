@@ -5,7 +5,7 @@ import '../styles/Home.css'
 
 // componets
 import { WeatherApi } from '../components/WeatherApi'
-import {NewsApi} from '../components/NewsApi/NewsApi'
+import {NewsTopHeadline} from '../components/NewsApi/NewsTopHeadline'
 
 // api news
 // https://rapidapi.com/pt/ubillarnet/api/google-news1/
@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
       <WeatherApi />
-      <NewsApi/>
+      <NewsTopHeadline/>
     </>
   )
 

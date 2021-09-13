@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 // css
-import './NewsApi.css'
+import './NewsTopHeadline.css'
 // Component
 import { NewsNuget } from './NewsNuget'
 
-export function NewsApi() {
+export function NewsTopHeadline() {
   const [articles, setArticles] = useState([])
 
   useEffect(() => {

@@ -15,6 +15,7 @@ import React from 'react'
 */
 
 export function NewsNuget({ news }) {
+
   return (
     <>
 
@@ -34,7 +35,7 @@ export function NewsNuget({ news }) {
               <h2 className='blog-title'>
                 {news.title}
               </h2>
-              <p>Autor - { news.author ? news.author : 'Sem informação' } </p>
+              <p>{ news.source['name'] } </p>
 
               <div className='blog-metas'>
 
@@ -70,7 +71,8 @@ export function NewsNuget({ news }) {
             </div> {/* blog-excerpt */}
 
             <a
-              href='#'
+              href={news.url}
+              target='_blank'
               className='button'
             >
               Página da Materia
