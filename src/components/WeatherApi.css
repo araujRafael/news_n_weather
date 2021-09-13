@@ -1,0 +1,147 @@
+
+.card-weather {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+  height: 50vh;
+
+  margin: 0;
+  padding: 0px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.603),
+   transparent);
+
+}
+
+
+.main-temp {
+  height: min-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0px;
+  margin: 0;
+}
+
+.main-weather{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 2rem 0 0 0;
+
+  width: 50%;
+  height: 15rem;
+}
+
+.main-weather h2{
+  font-size: 1.7rem;
+  color: aliceblue;
+}
+
+.principal-temp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.principal-temp h1 {
+  font-size: 3rem;
+  position: relative;
+  right: -10px;
+}
+.principal-temp .metrics {
+  position: relative;
+  right: -12px;
+  font-size: 1.5rem;
+}
+.icon-wather{
+  width: fit-content;
+  height: fit-content;
+
+}
+.icon-wather img {
+  width: 65px;
+  height: 65px;
+  opacity: 0.5;
+}
+
+.max-min {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: baseline;
+  gap: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: aliceblue;
+}
+
+.max-min .max{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.max-min .min{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 5px;
+}
+.max-min .min span:first-child{
+  position: relative;
+  top: 2px;
+}
+
+/* list */
+ul.list-details {
+  position: relative;
+  
+  width: 50%;
+  height: 15rem;
+
+  margin: 0;
+  padding: 2rem 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.list-details li {
+  list-style: none;
+  /* margin: auto; */
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.list-details li span{
+  padding: 0;
+  /* margin: 0.2rem; */
+}
+.list-details li span:first-child{
+  font-size: 1.6rem;
+  position: relative;
+  right: 10px;
+}
+.list-details li span:last-child{
+  font-size: 1rem;
+}

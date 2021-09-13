@@ -1,0 +1,168 @@
+:root {
+  --off-white: #f5f5f5;
+  --accent: #57c94d;
+  --accent-dark: #44aa3b;
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  .container__card {
+    max-width: 80%;
+  }
+  .card {
+    height: 25rem;
+  }
+  .card__header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .card__body {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 12;
+    bottom: -100%;
+    transition: bottom 0.3s ease-in-out;
+  }
+
+  .card:hover .card__body {
+    bottom: 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+}
+
+p {
+  word-break: break-all;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  height: auto;
+}
+
+.allCards__wraps {
+  width: 100%;
+  position: absolute;
+  top: 25vh;
+}
+
+/* Cards */
+.container__card {
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6rem;
+}
+
+.card__header {
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.card__header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  z-index: 2;
+}
+
+.card__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.blog-details {
+  position: relative;
+  z-index: 5;
+  color: var(--off-white);
+}
+
+h2.blog-title {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.blog-metas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.blog-metas .meta {
+  font-size: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.blog-metas .meta i {
+  margin-right: 0.4rem;
+}
+
+.blog-metas .meta:last-child {
+  margin-right: 0;
+}
+
+.card__body {
+  padding: 1rem 1.5rem;
+  background-color: var(--off-white);
+}
+
+.blog-category {
+  padding: 0.5rem;
+  border: 0.1rem solid var(--accent);
+  display: inline-block;
+  border-radius: 0.6rem;
+  color: var(--accent);
+}
+
+.blog-excerpt {
+  margin: 1rem 0;
+}
+
+.blog-excerpt p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.button {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  background-color: var(--accent);
+  color: var(--off-white);
+  border-radius: 0.6rem;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--accent-dark);
+}
