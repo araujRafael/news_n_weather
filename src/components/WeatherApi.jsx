@@ -128,7 +128,7 @@ export function WeatherApi() {
                   <MdVisibility />
                 </span>
                 <span>
-                  visibilidade <strong>
+                  Visibilidade <strong>
                     {(weather['visibility']) / 100}%
                   </strong>
                 </span>

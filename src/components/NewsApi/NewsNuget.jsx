@@ -39,13 +39,13 @@ export function NewsNuget({ news }) {
 
               <div className='blog-metas'>
 
-                <div className='meta'>
+                {/* <div className='meta'>
                   <i class="ri-eye-line"></i> 235
                 </div>
 
                 <div className='meta'>
                   <i class="ri-thumb-up-line"></i> 105
-                </div>
+                </div> */}
 
                 <div className='meta'>
                   <i class="ri-calendar-line"></i> {news.publishedAt
@@ -60,7 +60,7 @@ export function NewsNuget({ news }) {
 
           <div className='card__body'>
 
-            <div className='blog-category'>categoria</div> {/* blog-category */}
+            {/* <div className='blog-category'>categoria</div> blog-category */}
 
             <div className='blog-excerpt'>
               <p>

@@ -130,9 +130,20 @@ h2.blog-title {
   margin-right: 0;
 }
 
+
 .card__body {
   padding: 1rem 1.5rem;
   background-color: var(--off-white);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 12;
+  bottom: -100%;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.card:hover .card__body {
+  bottom: 0;
 }
 
 .blog-category {
